@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:customControl="clr-namespace:TestApp.CustomControls"
+             x:Class="TestApp.MainPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="primary">#3ec3d5</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout>
+      
+            <customControl:ImageEntry TextColor="White" 
+                        PlaceholderColor="{StaticResource primary}" 
+                        Image="user" 
+                        Placeholder="Email" 
+                        HorizontalOptions="FillAndExpand"/>            
+       
+
+       
+        <customControl:ImageEntry TextColor="White" 
+                    PlaceholderColor="{StaticResource primary}"  
+                    Image="password" 
+                    Placeholder="Password" 
+                    HorizontalOptions="FillAndExpand"/>
+        
+    </StackLayout>
+
+</ContentPage>
